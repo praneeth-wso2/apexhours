@@ -14,7 +14,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 		<set-variable value='#[attributes.queryParams.name]' doc:name="storing fruit name" doc:id="61aabb4f-fc67-4a71-8fc2-169c9dc5c065" variableName="name"/>
 		<logger level="INFO" doc:name="Start Logger" doc:id="a6f1f3c8-7839-4d98-b5e1-a7bd93e7a8f3" message="Start"/>
 		<http:request method="GET" doc:name="Request" doc:id="0c39b36c-ed9a-46fb-a45c-81c10fff06e6" config-ref="HTTP_Request_configuration" url="http://localhost:8081/airIndia"/>
-		<logger level="INFO" doc:name="End CompletedLogger" doc:id="ff6fdf68-4d9a-49c0-92de-74b1bdda7a89" />
+		<logger level="INFO" doc:name="End CompletedLogger apex" doc:id="ff6fdf68-4d9a-49c0-92de-74b1bdda7a89" />
 	</flow>
 	<flow name="private-flow" doc:id="c20bbe14-c9bc-4354-8b94-d029b863035b" >
 		<http:listener doc:name="Listener" doc:id="978fa76a-8aab-48cf-80b1-c1ddda3afc0c" config-ref="HTTP_Listener_config" path="airIndia"/>
